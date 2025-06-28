@@ -73,7 +73,7 @@ Bing每日精选图片
 
 🔗 图片详情: https://www.bing.com/th?id=OHR.AuroraNorway_ZH-CN...
 ## 注意事项
-插件使用公开的Bing图片API https://bing.biturl.top，请确保网络畅通
+插件使用公开的Bing图片API https://bing.biturl.top ，请确保网络畅通
 
 图片缓存存储在 cache/bing_daily_image 目录，定期清理可释放空间
 
