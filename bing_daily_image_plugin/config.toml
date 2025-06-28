@@ -1,0 +1,14 @@
+[plugin]
+name = "bing_daily_image_plugin"
+version = "1.0.0"
+
+[components]
+enable_bing_image = true
+
+[api]
+resolution = "UHD"  # 可选: 1366,1920,3840,UHD
+language = "zh-CN"  # 可选: zh-CN, en-US, ja-JP
+
+[image]
+compress_image = true     # 是否压缩大尺寸图片
+max_image_size = 4194304  # 最大图片大小(4MB)

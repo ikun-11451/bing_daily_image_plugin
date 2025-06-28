@@ -1,0 +1,48 @@
+{
+  "manifest_version": 1,
+  "name": "bing_daily_image_plugin",
+  "version": "1.0.0",
+  "description": "获取微软Bing每日精选图片并显示相关信息",
+  "author": "全民制作人：ikun两年半",
+  "license": "GPL-3.0",
+  "host_application": {"min_version": "0.8.0", "max_version": "0.8.0"},
+  "keywords": ["bing", "壁纸", "图片", "每日一图"],
+  "categories": ["图片", "资讯", "工具"],
+  "config_file_name": "config.toml",
+  "config_section_descriptions": {
+    "plugin": "插件基本配置",
+    "components": "组件启用控制",
+    "api": "API相关配置",
+    "image": "图片处理配置"
+  },
+  "config_schema": {
+    "plugin": {
+      "config_version": {"type": "str", "default": "1.0.0", "description": "配置文件版本号"}
+    },
+    "components": {
+      "enable_bing_image": {"type": "bool", "default": true, "description": "启用Bing每日一图功能"}
+    },
+    "api": {
+      "resolution": {
+        "type": "str",
+        "default": "1920",
+        "description": "图片分辨率",
+        "choices": ["1366", "1920", "3840", "UHD"]
+      },
+      "language": {
+        "type": "str",
+        "default": "zh-CN",
+        "description": "语言区域",
+        "choices": [
+          "zh-CN", "en-US", "ja-JP", "en-AU", "en-GB", "de-DE",
+          "en-NZ", "en-CA", "en-IN", "fr-FR", "fr-CA", "it-IT",
+          "es-ES", "pt-BR", "en-ROW"
+        ]
+      }
+    },
+    "image": {
+      "compress_image": {"type": "bool", "default": true, "description": "是否压缩大尺寸图片"},
+      "max_image_size": {"type": "int", "default": 2097152, "description": "图片最大字节数(默认2MB)"}
+    }
+  }
+}
