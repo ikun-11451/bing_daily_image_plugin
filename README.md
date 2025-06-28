@@ -1,0 +1,1 @@
+# bing_daily_image_plugin
